@@ -15,7 +15,7 @@ for /l %%i in (800,-1,0) do (
     cls    
 
 )
-taskkill /f /im chromedriver.exe /t
+#optional taskkill /f /im chromedriver.exe /t
 
 goto start
 
