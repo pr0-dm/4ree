@@ -1,0 +1,22 @@
+@echo off
+setlocal
+
+:start
+start your_file.py
+color 02
+cls
+for /l %%i in (800,-1,0) do (
+
+    echo.
+    echo.
+    echo        %%i
+    echo     countdown
+    1>nul ping -n 2 127.1
+    cls    
+
+)
+taskkill /f /im chromedriver.exe /t
+
+goto start
+
+pause
